@@ -1,0 +1,22 @@
+{% extends 'home.html' %}
+
+{% block content %}
+<p>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+</head>
+<body>
+    <form action="/" method="POST" enctype="multipart/form-data">
+
+        <label for="user_file"><b>Upload Your File</b></label>
+        <br></br>
+        <input type="file" name="user_file">
+        <br></br>
+		
+	</form>
+	
+</body>
+</p>
+
+{% block content %}
