@@ -17,11 +17,11 @@ app.config.from_object("config")
 # app.secret_key = 'your_secret_key'
 
 # Enter your database connection details below
-app.config['MYSQL_HOST'] = 'pntdidevdb.logitech.com'
-app.config['MYSQL_USER'] = 'pentaho_audit'
-app.config['MYSQL_PASSWORD'] = '$Logitech123'
-app.config['MYSQL_DB'] = 'pentaho_audit'
-UPLOAD_FOLDER = 'C:/Users/ln2/flask-crud-app/data'
+app.config['MYSQL_HOST'] = '127.0.0.1:3306'
+app.config['MYSQL_USER'] = 'root'
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = 'nlp'
+UPLOAD_FOLDER = '/home/ubuntu/data'
 app.secret_key = "secret key"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
